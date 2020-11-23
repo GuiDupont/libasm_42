@@ -14,12 +14,11 @@ compare:
 	cmp		cl, 0					; if they are equal we check they are != 0
 	jz		ft_end					; if they are equal to zero we are done
 
-	inc		rax					; if it's not the case we increase rax
+	inc		rax						; if it's not the case we increase rax
 	jmp		compare					; and go back to copy
 
 ft_end:
-	movzx	rax, dl			; movzx = move with zero end
+	movzx	rax, dl					; movzx = move with zero end
     movzx	rbx, cl
-    sub		rax, rbx		; we put the difference of the last two char in rax
+    sub		rax, rbx				; we put the difference of the last two char in rax
 	ret
-	

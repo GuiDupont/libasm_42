@@ -1,7 +1,6 @@
 section	.text
 global	ft_write
 
-extern __errno_location
 extern ft_error
 
 ft_write:

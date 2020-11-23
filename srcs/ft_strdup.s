@@ -1,8 +1,6 @@
 section	.text
 global	ft_strdup
-;%rdi​,​ %rsi​, ​%rdx​, ​%rcx​, ​%r8​, and ​%r9
 
-extern __errno_location
 extern malloc
 extern ft_strlen
 extern ft_strcpy
